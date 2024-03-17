@@ -363,7 +363,7 @@ public class Inicio extends javax.swing.JFrame {
 
             try {
                 //crear Menu y Menu2
-                Menu1 ver = new Menu1(expresionMat);
+                Menu ver = new Menu(expresionMat);
                 ver.setVisible(true);
                 this.setVisible(false);
             } catch (Exception ex) {
