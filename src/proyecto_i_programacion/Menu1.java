@@ -13,7 +13,7 @@ public class Menu1 extends javax.swing.JFrame {
     /**
      * Creates new form Menu1
      */
-    public Menu1() {
+    public Menu1(String expresionMat) {
         initComponents();
     }
 
@@ -72,7 +72,7 @@ public class Menu1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu1().setVisible(true);
+                new Menu1(expresionMat).setVisible(true);
             }
         });
     }
