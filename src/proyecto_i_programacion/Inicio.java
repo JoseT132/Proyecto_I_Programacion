@@ -386,13 +386,20 @@ public class Inicio extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton20ActionPerformed
     public static boolean esExpresionMatematica(String expresion) {
-       //Completr verificador de numeros
+        String Permitidos = "^[-+*/^()√\\d\\.\\s]+$";
+        Pattern pattern = Pattern.compile(Permitidos);
+        Matcher matcher = pattern.matcher(expresion);
+        return matcher.matches();
         return false;
        
     }
 
     public static boolean esExpresionSoloLetras(String expresion) {
         //Completr verificador de numeros
+        String regex = "^[-+*/^()√a-zA-Z]+$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(expresion);
+        return matcher.matches();
         return false;
         
     }
